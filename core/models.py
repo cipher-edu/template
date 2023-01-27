@@ -6,5 +6,3 @@ class LandingHead(models.Model):
     landing_image = models.ImageField(upload_to='images/')
     landing_title = models.TextField(max_length=250)
 
-    # def __init__(self):
-    #     return self.landing_title

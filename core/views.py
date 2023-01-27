@@ -1,5 +1,9 @@
 from django.shortcuts import render
 from .models import *
-
 def home(request):
-    return render(request, 'index.html')
+    landing = LandingHead.objects.all()
+    context = {
+        'landing':landing
+    }
+
+    return render(request, 'index.html', context)

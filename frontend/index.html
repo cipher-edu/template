@@ -96,15 +96,17 @@
 
 							<!-- Begin logo 
 							================ -->
+							{% for logo in landing %}
 							<div class="tt-logo"> 
 								<a href="index.html">
-								
 									<!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
-									<img src="" class="tt-logo-light magnetic-item" alt="Logo"> <!-- logo light -->
-									<img src="" class="tt-logo-dark magnetic-item" alt="Logo"> <!-- logo dark -->
-									
+									<!-- <img src="" class="tt-logo-light magnetic-item" alt="Logo"> 
+									<img src="" class="tt-logo-dark magnetic-item" alt="Logo">  -->
+									<img src="{{logo.logos.url}}"  class="tt-logo-light magnetic-item" alt="">
 								</a>
 							</div>
+
+							{% endfor %}
 							<!-- End logo -->
 
 						</div> <!-- /.tt-header-col -->
@@ -444,21 +446,25 @@
 
 							<!-- Begin page header image 
 							============================= -->
+							{% for landingimage in landing %}
 							<div class="ph-image">
 								<div class="ph-image-inner">
-									{% for landingimage in hcontent%}
-									<img src="{{ landingimage.landing_image.url }}" alt="Image">
-									{% endfor %}
+									
+									<img src="{{landingimage.landing_image.url}}" alt="Image">
+									
 								</div>
 							</div>
+							{% endfor %}
 
+							{% for textlandiong in landing %}
 							<div class="ph-caption max-width-1000">
-								{% for landingtitle in hcontent %}
-								<h1 class="ph-caption-title ph-appear font-normal">{{landingtitle.landing_title}}</h1>
-								{% endfor %}
+								
+								<h1 class="ph-caption-title ph-appear font-normal">{{textlandiong.landing_title}}</h1>
+							
 								<div class="ph-caption-title-ghost ph-appear">CIPHER-EDU</div>
 								<!-- <div class="ph-caption-subtitle ph-appear">Subtitle</div> -->
 							</div> 
+							{% endfor %}
 							<!-- End page header caption -->
 
 						</div> <!-- /.page-header-inner -->
