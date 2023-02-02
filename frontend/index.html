@@ -17,24 +17,8 @@
 		<meta name="author" content="themetorium.net">
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon (http://www.favicon-generator.org/) -->
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<!-- Google Analytics - Global site tag (gtag.js) -->
-		<!-- Paste your Google Anaytics code here. -->
-		<!-- Google fonts (https://www.google.com/fonts) -->
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Body font -->
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet"> <!-- Secondary/Alter font -->
-		<!-- Libs and Plugins CSS -->
-		<link rel="stylesheet" href="{% static 'vendor/normalize/normalize.min.css' %}"> <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
-		<link rel="stylesheet" href="{% static 'vendor/fontawesome/css/fontawesome-all.min.css' %}"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
-		<link rel="stylesheet" href="{% static 'vendor/swiper/css/swiper-bundle.min.css' %}"> <!-- Swiper CSS (https://swiperjs.com/) -->
-		<link rel="stylesheet" href="{% static 'vendor/lightgallery/css/lightgallery.min.css'%}"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
-		<!-- Template master CSS -->
-		<link rel="stylesheet" href="{% static 'css/helper.css' %}">
-		<link rel="stylesheet" href="{% static 'css/theme.css' %}">
 
+		{% include 'detailes/links.html'%}
 	</head>
 
 	
@@ -125,316 +109,7 @@
 									<a href="#" class="tt-ol-menu-toggle-btn magnetic-item"><span></span></a>
 								</div>
 							</div>
-							<nav class="tt-overlay-menu tt-ol-menu-center tt-ol-menu-count">
-								<div class="tt-ol-menu-holder">
-									<div class="tt-ol-menu-inner tt-wrap">
-										<div class="tt-ol-menu-content">
-
-											<!-- Begin menu list -->
-											<ul class="tt-ol-menu-list">
-
-												<!-- <li><a href="">Single Link</a></li> -->
-
-												<!-- Begin submenu (submenu master)
-												==================================== -->
-												<li class="tt-ol-submenu-wrap active">
-													<div class="tt-ol-submenu-trigger">
-														<a href="#">Home</a>
-														<div class="tt-ol-submenu-caret-wrap">
-															<div class="tt-ol-submenu-caret magnetic-item"></div>
-														</div> <!-- /.tt-ol-submenu-caret-wrap -->
-													</div> <!-- /.tt-ol-submenu-trigger -->
-													<div class="tt-ol-submenu">
-														<ul class="tt-ol-submenu-list">
-
-															<li class="active"><a href="landing-page-1.html">Landing Page v.1</a></li>
-															<li><a href="landing-page-2.html">Landing Page v.2</a></li>
-
-														</ul> <!-- /.tt-ol-submenu-list -->
-													</div> <!-- /.tt-ol-submenu -->
-												</li>
-												<!-- End submenu (sub-master) -->
-
-												<!-- Begin submenu (submenu master)
-												==================================== -->
-												<li class="tt-ol-submenu-wrap">
-													<div class="tt-ol-submenu-trigger">
-														<a href="#">Portfolio</a>
-														<div class="tt-ol-submenu-caret-wrap">
-															<div class="tt-ol-submenu-caret magnetic-item"></div>
-														</div> <!-- /.tt-ol-submenu-caret-wrap -->
-													</div> <!-- /.tt-ol-submenu-trigger -->
-													<div class="tt-ol-submenu">
-														<ul class="tt-ol-submenu-list">
-
-															<!-- Begin submenu
-															=================== -->
-															<li class="tt-ol-submenu-wrap">
-																<div class="tt-ol-submenu-trigger">
-																	<a href="#" class="tt-ol-submenu-link">Portfolio List</a>
-																	<div class="tt-ol-submenu-caret-wrap">
-																		<div class="tt-ol-submenu-caret magnetic-item"></div>
-																	</div> <!-- /.tt-ol-submenu-caret-wrap -->
-																</div> <!-- /.tt-ol-submenu-trigger -->
-																<div class="tt-ol-submenu">
-																	<ul class="tt-ol-submenu-list">
-
-																		<li><a href="portfolio-list-classic.html">List Classic</a></li>
-																		<li><a href="portfolio-list-overlay.html">List Overlay</a></li>
-																		<li><a href="portfolio-list-compact.html">List Compact</a></li>
-																		
-																	</ul> <!-- /.tt-ol-submenu-list -->
-																</div> <!-- /.tt-ol-submenu -->
-															</li>
-															<!-- End submenu -->
-
-															<!-- Begin submenu
-															=================== -->
-															<li class="tt-ol-submenu-wrap">
-																<div class="tt-ol-submenu-trigger">
-																	<a href="#" class="tt-ol-submenu-link">Portfolio Grid</a>
-																	<div class="tt-ol-submenu-caret-wrap">
-																		<div class="tt-ol-submenu-caret magnetic-item"></div>
-																	</div> <!-- /.tt-ol-submenu-caret-wrap -->
-																</div> <!-- /.tt-ol-submenu-trigger -->
-																<div class="tt-ol-submenu">
-																	<ul class="tt-ol-submenu-list">
-
-																		<li><a href="portfolio-grid-creative-1.html">Grid Creative v.1</a></li>
-																		<li><a href="portfolio-grid-creative-2.html">Grid Creative v.2</a></li>
-																		<li><a href="portfolio-grid-modern.html">Grid Modern</a></li>
-																		<li><a href="portfolio-grid-classic.html">Grid Classic</a></li>
-																		<li><a href="portfolio-grid-portrait-mode.html">Portrait Mode</a></li>
-																		<li><a href="portfolio-one-column.html">One Column</a></li>
-																		
-																	</ul> <!-- /.tt-ol-submenu-list -->
-																</div> <!-- /.tt-ol-submenu -->
-															</li>
-															<!-- End submenu -->
-
-															<!-- Begin submenu
-															=================== -->
-															<li class="tt-ol-submenu-wrap">
-																<div class="tt-ol-submenu-trigger">
-																	<a href="#" class="tt-ol-submenu-link">Slider &amp; Carousel</a>
-																	<div class="tt-ol-submenu-caret-wrap">
-																		<div class="tt-ol-submenu-caret magnetic-item"></div>
-																	</div> <!-- /.tt-ol-submenu-caret-wrap -->
-																</div> <!-- /.tt-ol-submenu-trigger -->
-																<div class="tt-ol-submenu">
-																	<ul class="tt-ol-submenu-list">
-
-																		<li><a href="portfolio-fullscreen-slider.html">Fullscreen Slider</a></li>
-																		<li><a href="portfolio-carousel-overlay.html">Carousel Overlay</a></li>
-																		<li><a href="portfolio-carousel-center.html">Carousel Center</a></li>
-																		
-																	</ul> <!-- /.tt-ol-submenu-list -->
-																</div> <!-- /.tt-ol-submenu -->
-															</li>
-															<!-- End submenu -->
-
-															<li><a href="portfolio-interactive.html">Interactive</a></li>
-															<li><a href="portfolio-interactive-compact.html">Interactive Compact</a></li>
-															<li><a href="elements-classic-menu.html">Classic Menu</a></li>
-
-														</ul> <!-- /.tt-ol-submenu-list -->
-													</div> <!-- /.tt-ol-submenu -->
-												</li>
-												<!-- End submenu (sub-master) -->
-
-												<!-- Begin submenu (submenu master)
-												==================================== -->
-												<li class="tt-ol-submenu-wrap">
-													<div class="tt-ol-submenu-trigger">
-														<a href="#">About</a>
-														<div class="tt-ol-submenu-caret-wrap">
-															<div class="tt-ol-submenu-caret magnetic-item"></div>
-														</div> <!-- /.tt-ol-submenu-caret-wrap -->
-													</div> <!-- /.tt-ol-submenu-trigger -->
-													<div class="tt-ol-submenu">
-														<ul class="tt-ol-submenu-list">
-
-															<li><a href="about-us.html">About Us</a></li>
-															<li><a href="about-me.html">About Me</a></li>
-
-														</ul> <!-- /.tt-ol-submenu-list -->
-													</div> <!-- /.tt-ol-submenu -->
-												</li>
-												<!-- End submenu (sub-master) -->
-
-												<!-- Begin submenu (submenu master)
-												==================================== -->
-												<li class="tt-ol-submenu-wrap">
-													<div class="tt-ol-submenu-trigger">
-														<a href="#">Blog</a>
-														<div class="tt-ol-submenu-caret-wrap">
-															<div class="tt-ol-submenu-caret magnetic-item"></div>
-														</div> <!-- /.tt-ol-submenu-caret-wrap -->
-													</div> <!-- /.tt-ol-submenu-trigger -->
-													<div class="tt-ol-submenu">
-														<ul class="tt-ol-submenu-list">
-
-															<!-- Begin submenu
-															=================== -->
-															<li class="tt-ol-submenu-wrap">
-																<div class="tt-ol-submenu-trigger">
-																	<a href="#" class="tt-ol-submenu-link">Blog List</a>
-																	<div class="tt-ol-submenu-caret-wrap">
-																		<div class="tt-ol-submenu-caret magnetic-item"></div>
-																	</div> <!-- /.tt-ol-submenu-caret-wrap -->
-																</div> <!-- /.tt-ol-submenu-trigger -->
-																<div class="tt-ol-submenu">
-																	<ul class="tt-ol-submenu-list">
-
-																		<li><a href="blog-interactive.html">Interactive List</a></li>
-																		<li><a href="blog-list.html">Compact List</a></li>
-																		<li><a href="blog-classic.html">Classic List</a></li>
-																		<li><a href="blog-classic-sidebar.html">Classic Sidebar</a></li>
-																		
-																	</ul> <!-- /.tt-ol-submenu-list -->
-																</div> <!-- /.tt-ol-submenu -->
-															</li>
-															<!-- End submenu -->
-
-															<!-- Begin submenu
-															=================== -->
-															<li class="tt-ol-submenu-wrap">
-																<div class="tt-ol-submenu-trigger">
-																	<a href="#" class="tt-ol-submenu-link">Blog Post</a>
-																	<div class="tt-ol-submenu-caret-wrap">
-																		<div class="tt-ol-submenu-caret magnetic-item"></div>
-																	</div> <!-- /.tt-ol-submenu-caret-wrap -->
-																</div> <!-- /.tt-ol-submenu-trigger -->
-																<div class="tt-ol-submenu">
-																	<ul class="tt-ol-submenu-list">
-
-																		<li><a href="blog-post.html">Single Post</a></li>
-																		<li><a href="blog-post-classic-sidebar.html">Classic Sidebar</a></li>
-																		
-																	</ul> <!-- /.tt-ol-submenu-list -->
-																</div> <!-- /.tt-ol-submenu -->
-															</li>
-															<!-- End submenu -->
-
-														</ul> <!-- /.tt-ol-submenu-list -->
-													</div> <!-- /.tt-ol-submenu -->
-												</li>
-												<!-- End submenu (sub-master) -->
-
-												<!-- Begin submenu (submenu master)
-												==================================== -->
-												<li class="tt-ol-submenu-wrap">
-													<div class="tt-ol-submenu-trigger">
-														<a href="#">Shop</a>
-														<div class="tt-ol-submenu-caret-wrap">
-															<div class="tt-ol-submenu-caret magnetic-item"></div>
-														</div> <!-- /.tt-ol-submenu-caret-wrap -->
-													</div> <!-- /.tt-ol-submenu-trigger -->
-													<div class="tt-ol-submenu">
-														<ul class="tt-ol-submenu-list">
-
-															<!-- Begin submenu
-															=================== -->
-															<li class="tt-ol-submenu-wrap">
-																<div class="tt-ol-submenu-trigger">
-																	<a href="#" class="tt-ol-submenu-link">Product Lists</a>
-																	<div class="tt-ol-submenu-caret-wrap">
-																		<div class="tt-ol-submenu-caret magnetic-item"></div>
-																	</div> <!-- /.tt-ol-submenu-caret-wrap -->
-																</div> <!-- /.tt-ol-submenu-trigger -->
-																<div class="tt-ol-submenu">
-																	<ul class="tt-ol-submenu-list">
-
-																		<li><a href="shop-list.html">Sliding Sidebar</a></li>
-																		<li><a href="shop-list-classic.html">Classic Sidebar</a></li>
-																		
-																	</ul> <!-- /.tt-ol-submenu-list -->
-																</div> <!-- /.tt-ol-submenu -->
-															</li>
-															<!-- End submenu -->
-
-															<!-- Begin submenu
-															=================== -->
-															<li class="tt-ol-submenu-wrap">
-																<div class="tt-ol-submenu-trigger">
-																	<a href="#" class="tt-ol-submenu-link">Product Pages</a>
-																	<div class="tt-ol-submenu-caret-wrap">
-																		<div class="tt-ol-submenu-caret magnetic-item"></div>
-																	</div> <!-- /.tt-ol-submenu-caret-wrap -->
-																</div> <!-- /.tt-ol-submenu-trigger -->
-																<div class="tt-ol-submenu">
-																	<ul class="tt-ol-submenu-list">
-
-																		<li><a href="shop-single.html">Product Page</a></li>
-																		<li><a href="shop-single-simple.html">Simple Product Page</a></li>
-																		
-																	</ul> <!-- /.tt-ol-submenu-list -->
-																</div> <!-- /.tt-ol-submenu -->
-															</li>
-															<!-- End submenu -->
-
-															<!-- Begin submenu
-															=================== -->
-															<li class="tt-ol-submenu-wrap">
-																<div class="tt-ol-submenu-trigger">
-																	<a href="#" class="tt-ol-submenu-link">Product Ordering</a>
-																	<div class="tt-ol-submenu-caret-wrap">
-																		<div class="tt-ol-submenu-caret magnetic-item"></div>
-																	</div> <!-- /.tt-ol-submenu-caret-wrap -->
-																</div> <!-- /.tt-ol-submenu-trigger -->
-																<div class="tt-ol-submenu">
-																	<ul class="tt-ol-submenu-list">
-
-																		<li><a href="shop-cart.html">Shopping Cart</a></li>
-																		<li><a href="shop-checkout.html">Checkout</a></li>
-																		<li><a href="shop-order-details.html">Order Details</a></li>
-																		
-																	</ul> <!-- /.tt-ol-submenu-list -->
-																</div> <!-- /.tt-ol-submenu -->
-															</li>
-															<!-- End submenu -->
-
-															<!-- Begin submenu
-															=================== -->
-															<li class="tt-ol-submenu-wrap">
-																<div class="tt-ol-submenu-trigger">
-																	<a href="#" class="tt-ol-submenu-link">More Pages</a>
-																	<div class="tt-ol-submenu-caret-wrap">
-																		<div class="tt-ol-submenu-caret magnetic-item"></div>
-																	</div> <!-- /.tt-ol-submenu-caret-wrap -->
-																</div> <!-- /.tt-ol-submenu-trigger -->
-																<div class="tt-ol-submenu">
-																	<ul class="tt-ol-submenu-list">
-
-																		<li><a href="shop-wishlist.html">Wishlist</a></li>
-																		<li><a href="shop-login.html">Login Page</a></li>
-																		<li><a href="shop-register.html">Register Account</a></li>
-																		<li><a href="shop-reset-password.html">Reset Password</a></li>
-																		
-																	</ul> <!-- /.tt-ol-submenu-list -->
-																</div> <!-- /.tt-ol-submenu -->
-															</li>
-															<!-- End submenu -->
-
-														</ul> <!-- /.tt-ol-submenu-list -->
-													</div> <!-- /.tt-ol-submenu -->
-												</li>
-												<!-- End submenu (sub-master) -->
-
-												<li><a href="contact.html">Contact</a></li>
-
-											</ul>
-											<!-- End menu list -->
-
-										</div> <!-- /.tt-ol-menu-content -->
-									</div> <!-- /.tt-ol-menu-inner -->
-								</div> <!-- /.tt-ol-menu-holder -->
-
-								<!-- Begin noise background -->
-								<div class="bg-noise"></div>
-								<!-- End noise background -->
-
-							</nav> 
+							{% include 'detailes/navbar.html'%}
 							<!-- End overlay menu -->
 
 						</div> <!-- /.header-col -->
@@ -571,21 +246,25 @@
 															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
 															<div class="pgi-image-holder cover-opacity-2">
 																<div class="pgi-image-inner anim-zoomin">
+																	{% for postimage in postl %}
 																	<figure class="pgi-image ttgr-height">
-																		<img src="assets/img/portfolio/portfolio-1.jpg" alt="image">
-																	</figure> <!-- /.pgi-image -->
+																		<img src="{{postimage.post_image.url}}" alt="image">
+																	</figure> 
+																	{%endfor%}<!-- /.pgi-image -->
 																</div> <!-- /.pgi-image-inner -->
 															</div> <!-- /.pgi-image-holder -->
 														</a> <!-- /.pgi-image-wrap -->
 
 														<div class="pgi-caption">
+															{% for postdesc in postl %}
 															<div class="pgi-caption-inner">
-																<h2 class="pgi-title">Victorian Girls</h2>
+																<a href=""class="pgi-image-wrap" data-cursor="View<br>Project">
+																<h2 class="pgi-title">{{postdesc.post_title}}</h2></a>
 																<div class="pgi-categories-wrap">
-																	<div class="pgi-category">People</div>
+																	<div class="pgi-category">{{postdesc.post_category}}</div>
 																	<!-- <div class="pgi-category">Varia</div> -->
 																</div> <!-- /.pli-categories-wrap -->
-															</div> <!-- /.pgi-caption-inner -->
+															</div> {%endfor%}<!-- /.pgi-caption-inner -->
 														</div> <!-- /.pgi-caption -->
 													</div>
 													<!-- End portfolio grid item -->
@@ -608,21 +287,24 @@
 															<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
 															<div class="pgi-image-holder cover-opacity-2">
 																<div class="pgi-image-inner anim-zoomin">
+																	{% for postdescr in postr %}
 																	<figure class="pgi-image ttgr-height">
-																		<img src="assets/img/portfolio/portfolio-2.jpg" alt="image">
-																	</figure> <!-- /.pgi-image -->
+																		<img src="{{postdescr.post_image.url}}" alt="image">
+																	</figure> {%endfor%}<!-- /.pgi-image -->
 																</div> <!-- /.pgi-image-inner -->
 															</div> <!-- /.pgi-image-holder -->
 														</a> <!-- /.pgi-image-wrap -->
 
 														<div class="pgi-caption">
+															{% for postdescr in postl %}
 															<div class="pgi-caption-inner">
-																<h2 class="pgi-title">Smithy</h2>
+																<a href=""class="pgi-image-wrap" data-cursor="View<br>Project">
+																<h2 class="pgi-title">{{postdescr.post_title}}</h2></a>
 																<div class="pgi-categories-wrap">
-																	<div class="pgi-category">Creative</div>
+																	<div class="pgi-category">{{postdescr.post_category}}</div>
 																	<!-- <div class="pgi-category">Varia</div> -->
 																</div> <!-- /.pli-categories-wrap -->
-															</div> <!-- /.pgi-caption-inner -->
+															</div> {%endfor%}<!-- /.pgi-caption-inner -->
 														</div> <!-- /.pgi-caption -->
 													</div>
 													<!-- End portfolio grid item -->
@@ -1156,28 +838,7 @@
 
         
 
-		<!-- ====================
-		///// Scripts below /////
-		===================== -->
-
-		<!-- Core JS -->
-		<script src="{% static 'vendor/jquery/jquery.min.js'%}"></script> <!-- jquery JS (https://jquery.com) -->
-
-		<!-- Libs and Plugins JS -->
-		<script src="{% static 'vendor/gsap/gsap.min.js' %} "></script> <!-- GSAP JS (https://greensock.com/gsap/) -->
-		<script src="{% static 'vendor/gsap/ScrollToPlugin.min.js' %} "></script> <!-- GSAP ScrollToPlugin JS (https://greensock.com/scrolltoplugin/) -->
-		<script src="{% static 'vendor/gsap/ScrollTrigger.min.js' %} "></script> <!-- GSAP ScrollTrigger JS (https://greensock.com/scrolltrigger/) -->
-
-		<script src="{% static 'vendor/smooth-scrollbar.js' %} "></script> <!-- Smooth Scrollbar JS (https://github.com/idiotWu/smooth-scrollbar/) -->
-		<script src="{% static 'vendor/swiper/js/swiper-bundle.min.js' %} "></script> <!-- Swiper JS (https://swiperjs.com/) -->
-		<script src="{% static 'vendor/isotope/imagesloaded.pkgd.min.js' %} "></script> <!-- imagesloaded JS (more info: https://imagesloaded.desandro.com/) -->
-		<script src="{% static 'vendor/isotope/isotope.pkgd.min.js' %} "></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
-		<script src="{% static 'vendor/isotope/packery-mode.pkgd.min.js' %} "></script> <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
-		<script src="{% static 'vendor/lightgallery/js/lightgallery-all.min.js' %} "></script> <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
-		<script src="{% static 'vendor/jquery.mousewheel.min.js' %} "></script> <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
-
-		<!-- Theme master JS -->
-		<script src="{% static 'js/theme.js' %}"></script>
+{% include 'detailes/scripts.html'%}
 
 
 
