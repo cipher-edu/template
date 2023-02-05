@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 class LandingHead(models.Model):
@@ -9,14 +10,14 @@ class LandingHead(models.Model):
 #cattegory
 
 class Category(models.Model):
-    category = models.CharField(max_length=100, null=True, blank=True)
+    name = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         verbose_name = 'categoriya'
         verbose_name_plural = 'categoriyalarni kiriting'
     
     def __str__(self):
-        return self.category
+        return self.name
 
 #add post
 
@@ -46,7 +47,7 @@ class Postr(models.Model):
         return self.post_title
 
 class Postarchive(models.Model):
-    archive_category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
     archive_image = models.ImageField(upload_to='posts')
     archive_title = models.CharField(max_length=150)
     archive_content = models.TextField()
@@ -59,3 +60,6 @@ class Postarchive(models.Model):
 
     def  __str__(self):
         return self.archive_title
+
+    def get_absolute_url(self):
+        return reverse('post', kwargs={'post_id':self.pk})

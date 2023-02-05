@@ -191,14 +191,15 @@
 						-->
 						<div class="tt-section">
 							<div class="tt-section-inner tt-wrap">
+								{% block content %}
 								<div class="blog-interactive bi-borders">
 									{% for archiv in archive %}
 									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
+										<a href="" class="bi-item-image">  <!-- if exist -->
 											<img src="{{archiv.archive_image.url}}" alt="image">
 										</a>
 										<div class="bi-item-categories">
-											<a href="{% url 'blog' %}?category={{archive_category}}">{{archiv.archive_category}}</a>
+											<a href="{{archiv.get_absolute_url}}">{{archiv.category}}</a>
 											<!-- <a href="">Uncategorized</a> -->
 										</div>
 										<h2 class="bi-item-title"><a href="">{{archiv.archive_title}}</a></h2>
@@ -209,6 +210,7 @@
 									</article>
 									{%endfor%}
 								</div>
+								{%endblock%}
 								<!-- End blog interactive -->
 								<!-- Begin sliding sidebar 
 								=========================== 
